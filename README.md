@@ -1,5 +1,8 @@
 # Landing Page - Psicologia Clínica
 
+🔗 **Acesse o projeto online:** [victoria-figueiredo.netlify.app](https://victoria-figueiredo.netlify.app/)
+📁 **Repositório do projeto:** [github.com/Laricf/Landing-Page-Victoria-Lima](https://github.com/Laricf/Landing-Page-Victoria-Lima)
+
 Uma landing page responsiva e moderna desenvolvida para captação de pacientes e apresentação de serviços de psicologia clínica e psicanálise. O projeto utiliza conceitos modernos de web design, como o layout assimétrico "Bento Box" e integração direta de agendamento via WhatsApp.
 
 ## 🚀 Funcionalidades
@@ -29,3 +32,21 @@ Uma landing page responsiva e moderna desenvolvida para captação de pacientes 
 ├── style.css               # Arquivo global de estilos (CSS)
 ├── termos.html             # Página de Termos de Uso
 └── README.md               # Documentação do projeto
+🌐 Como visualizar o projeto localmente
+Faça o clone deste repositório:
+
+Bash
+git clone [https://github.com/Laricf/Landing-Page-Victoria-Lima.git](https://github.com/Laricf/Landing-Page-Victoria-Lima.git)
+Abra a pasta do projeto no seu editor de código (como o VS Code).
+
+Execute o arquivo index.html no seu navegador ou utilize a extensão Live Server para visualização em tempo real.
+
+👩‍💻 Autora
+Larissa Conrado
+
+Estudante de Licenciatura em Computação - Universidade Federal da Bahia (UFBA)
+
+Desenvolvedora responsável pela arquitetura de código, estruturação semântica HTML e estilização responsiva em CSS deste projeto para um cliente final.
+
+⚠️ Aviso de Direitos Autorais
+Este é um projeto desenvolvido sob encomenda. O código-fonte está aberto neste repositório exclusivamente para fins de demonstração de portfólio. Todos os direitos sobre o design, textos e identidade visual pertencem à cliente. Não é permitida a cópia, distribuição ou uso comercial deste código.
