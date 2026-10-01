@@ -1,0 +1,837 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- HEADER SECTION --- */
+
+.header {
+    width: 100%;
+    background-color:#ffffff;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000; /
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: #438fbf;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #828a96;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #438fbf;
+}
+
+
+.nav-links a.active{
+    color: #4994b5;
+    border-bottom: 2px solid #4994b5;
+    padding-bottom: 4px;
+}
+
+.nav-links a.active::after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #438fbf;
+    bottom: 0;
+    left: 0;
+}
+
+.btn-agendar {
+    text-decoration: none;
+    background-color: #438fbf;
+    color: #ffffff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agendar:hover {
+    background-color: #387691;
+}
+
+/* --- HERO SECTION --- */
+
+.hero {
+    width: 100%;
+    background: linear-gradient(to right, #fdfdfe, #f4f8fb);
+    padding: 5rem 0;
+    overflow: hidden;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.hero-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.badge {
+    background-color: #f0f7fa;
+    color: #438fbf;
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #e0eff5;
+    letter-spacing:  0.5px;
+}
+
+.hero-content h1 {
+    color: #438fbf;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.hero-content p {
+    color: #828a96;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+.hero-button {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    background-color: #438fbf;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3 ease;
+}
+
+.btn-primary:hover {
+    background-color: #387691;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #438fbf;
+    text-decoration: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #dce8f0;
+    transition: all0.3 ease;
+}
+
+.hero-image-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: -1.5rem;
+    left: -2rem;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem; 
+    border-radius: 1rem;
+    box-shadow: 0 15px 35px rgba(67, 143, 191, 0.15);
+    max-width: 260px;
+    backdrop-filter: blur(5px);
+}
+
+.floating-card p {
+    color: #438fbf;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-style: italic;
+    margin: 0;
+}
+
+/* --- SECTION ABOUT ME--- */
+
+.about {
+    width: 100% ;
+    background-color: white;
+    padding: 6rem 0;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.about-image-wrapper {
+    flex: 1;
+    position: relative;
+    max-width: 450px;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    display: block;
+}
+
+.crp-badge {
+    position: absolute;
+    top: -0.4rem;
+    right: -0.4rem;
+
+    background-color: white;
+    color: #438fbf;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f7fa;
+}
+
+.about-content{
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-subtitle{
+    color: #828a96;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.about-content h2 {
+    color: #438fbf;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.about-content > p{
+    color: #828a96;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+
+.about-features {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.feature-item {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.feature-icon {
+    background-color: #f0f7fa;
+    min-width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.feature-text h3 {
+    color: #438fbf;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.feature-text p {
+    color: #828a96;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- SECTION SERVICES --- */
+
+.services {
+    width: 100%;
+    background-color: #fafbfc;
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-header {
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+}
+
+.services-header h2 {
+    color: #438fbf;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.services-header p {
+    color: #828a96;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.card-wide {
+    grid-column: span 2;
+}
+.card-narrow {
+    grid-column:  span 1;
+}
+
+.bento-card {
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.bento-card:hover{
+    transform: translateY(-5px);
+}
+
+.bg-white {
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.bg-blue {
+    background-color: #4994b5;
+    color: white;
+    box-shadow: 0 10px 30px rgba(73, 148, 181, 0.2);
+}
+
+.bg-light {
+    background-color: #f0f7fa;
+}
+
+.bento-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: inherit;
+}
+
+.bg-white h3, .bg-light h3 {
+    color: #4994b5;
+}
+
+.bento-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: inherit;
+}
+
+.bg-white p, .bg-light p {
+    color: #828a96;
+}
+
+.card-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4994b5;
+    margin-top: auto;
+}
+
+.link-white {
+    color: white;
+}
+
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f7fa;
+}
+
+.icon-transparent {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-white-icon {
+    background-color: white;
+}
+
+.card-horizontal {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.horizontal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- SECTION CONTACT  --- */
+
+.contact-section {
+    width: 100%;
+    background-color: white;
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fdfdfe;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow:  0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+}
+
+.contact-info h2 {
+    color: #438fbf;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    color: #828a96;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.contact-item span {
+    color: #438fbf;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    background-color: #438fbf;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: backgroud-color 0.3s ease;
+}
+
+.btn-whatsapp:hover{
+    background-color: #387691;
+}
+
+.contact-image {
+    flex: 1;
+    min-height: 400px;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+} 
+
+/* --- FOOTER  --- */
+
+.footer {
+    width: 100%;
+    background-color: white;
+    padding: 3rem 0;
+    border-top:  1px solid #f0f4f8;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-logo {
+    text-decoration: none;
+    color: #438fbf;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.copyright {
+    color: #9ba6b5;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.footer-link, .footer-crp {
+    text-decoration: none;
+    color: #9ba6b5;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+} 
+
+.footer-link:hover {
+    color: #438fbf;
+}
+
+/* --- AJUSTE TELAS --- */
+
+@media (max-width: 992px) {
+    /* Reduz o espaço geral entre as colunas */
+    .hero-container, .about-container {
+        gap: 2rem;
+    }
+
+    /* Bento Grid: Passa de 3 para 2 colunas */
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* O card da depressão (horizontal) se adapta às 2 colunas */
+    .card-wide {
+        grid-column: span 2;
+    }
+}
+
+/* --- CELULARES E TELAS PEQUENAS (até 768px) --- */
+@media (max-width: 768px) {
+    
+    /* 1. CABEÇALHO (HEADER) */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    .nav-links {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* 2. HERO SECTION */
+    .hero {
+        padding: 3rem 0;
+    }
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        align-items: center; /* Centraliza textos e botões */
+    }
+    .hero-content h1 {
+        font-size: 2.2rem; /* Diminui um pouco o título principal */
+    }
+    .hero-buttons {
+        flex-direction: column; /* Empilha os botões */
+        width: 100%;
+    }
+    .btn-primary, .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+    /* Ajuste do Card Flutuante da Hero na tela pequena */
+    .floating-card {
+        bottom: -2rem;
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza exato no meio */
+        width: 90%;
+    }
+
+    /* 3. SOBRE MIM */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-content {
+        align-items: center;
+    }
+    .about-features {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: left; /* Mantém os textos dos ícones alinhados para leitura */
+    }
+    /* Ajuste da tag flutuante do CRP na foto */
+    .crp-badge {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    /* 4. SERVIÇOS (BENTO GRID) */
+    .bento-grid {
+        grid-template-columns: 1fr; /* Quebra tudo para 1 única coluna */
+    }
+    .card-wide, .card-narrow {
+        grid-column: span 1; /* Força todos os cards a ocuparem 1 espaço */
+    }
+    /* Ajuste do card 4 (Imagem + Texto) que era deitado */
+    .card-horizontal {
+        flex-direction: column;
+        text-align: center;
+    }
+    .card-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* 5. CARTÃO DE CONTATO */
+    .contact-section {
+        padding: 4rem 1rem;
+    }
+    .contact-card {
+        flex-direction: column; /* Empilha o texto em cima e imagem embaixo */
+    }
+    .contact-info {
+        padding: 2.5rem 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-list {
+        align-items: center; /* Centraliza a lista de email/telefone */
+    }
+    .contact-item {
+        flex-direction: column; /* Ícone em cima, texto embaixo */
+        gap: 0.5rem;
+    }
+
+    /* 6. RODAPÉ (FOOTER) */
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    .footer-right {
+        flex-direction: column; /* Empilha os links de Privacidade e Termos */
+        gap: 1rem;
+    }
+}
+
+/* =========================================
+   PÁGINAS DE TERMOS E PRIVACIDADE
+   ========================================= */
+
+.legal-section {
+    padding: 6rem 0;
+    background-color: #fafbfc; /* Fundo cinza bem clarinho */
+    min-height: 60vh; /* Garante que o rodapé não suba se o texto for curto */
+}
+
+/* Container que simula uma folha de papel centralizada */
+.legal-container {
+    max-width: 800px; /* Mais estreito que o site normal para facilitar a leitura */
+    margin: 0 auto;
+    padding: 4rem;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* Estilizando os títulos que vieram do gerador */
+.legal-container h1 {
+    color: #438fbf;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.legal-container h2, 
+.legal-container h3 {
+    color: #438fbf;
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilizando os textos que vieram do gerador */
+.legal-container p, 
+.legal-container li {
+    color: #828a96;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+.legal-container ul, 
+.legal-container ol {
+    margin-left: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Responsividade específica para a página de textos */
+@media (max-width: 768px) {
+    .legal-section {
+        padding: 3rem 1rem;
+    }
+    .legal-container {
+        padding: 2rem 1.5rem;
+    }
+    .legal-container h1 {
+        font-size: 1.8rem;
+    }
+}
